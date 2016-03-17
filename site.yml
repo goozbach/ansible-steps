@@ -1,0 +1,14 @@
+---
+- name: step broken
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: foo
+      debug: msg=foo
+    - name: bar
+      debug: msg=bar
+    - name: baz
+      debug: msg=baz
+    - name: qux
+      debug: msg=qux
